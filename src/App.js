@@ -24,6 +24,9 @@ function App(){
     return [y, x]
   }
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   const [foodPosition, setFoodPosition] = useState(generateFoodPostion())
 
@@ -159,11 +162,17 @@ function App(){
 
       return (
         <div className="app">
-          {statut? <h1>Score: {SCORE}</h1> : <h1 style={{color:'red'}}>Perdu -- score:{SCORE}</h1> }
+          {statut? <h1>Score: {SCORE}</h1> : 
+          <div style={{textAlign:'center'}}>
+              <h1 style={{color:'red'}}>Perdu</h1>
+              <h3 style={{color:'red'}}>score:{SCORE}</h3>
+          </div> 
+          }
           <div className="area">
             <Snake position={position} />
             <Food foodPosition={foodPosition} />
           </div>
+          {!statut && <input style={{margin: '10px',padding: '10px',borderRadius: '15px'}} type={'button'} value={'Ressayez'} onClick={()=>refreshPage()}/>}
         </div>
       );
   }
