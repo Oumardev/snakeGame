@@ -31,7 +31,6 @@ function App(){
 
   useEffect(()=>{
       setTimeout(() => {
-        console.log('set time out',position)
         if(touch==='RIGHT'){
 
           if(position[position.length-1][0]===foodPosition[0] && position[position.length-1][1]===foodPosition[1]){
@@ -43,7 +42,6 @@ function App(){
           }else{
             if(position[position.length-1][1] >= 98){
               setStatut(false)
-              console.log('perdu')
               return
             }
         
@@ -64,7 +62,6 @@ function App(){
           }else{
             if(position[position.length-1][1] <= 0){
               setStatut(false)
-              console.log('perdu')
               return
             }
   
@@ -85,7 +82,6 @@ function App(){
           }else{
             if(position[position.length-1][0] >= 98){
               setStatut(false)
-              console.log('perdu')
               return
             }
   
@@ -106,7 +102,6 @@ function App(){
           }else{
             if(position[position.length-1][0] <= 0){
               setStatut(false)
-              console.log('perdu')
               return
             }
 
