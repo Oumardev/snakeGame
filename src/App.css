@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.area {
+  position: relative;
+  border: 1px black solid;
+  width: 494px;
+  height: 400px;
+}

@@ -1,0 +1,7 @@
+.food{
+    width: 2%;
+    height: 2%;
+    background-color: rgb(247, 59, 59);
+    position: absolute;
+    border: 1px solid #ffffff;
+}
