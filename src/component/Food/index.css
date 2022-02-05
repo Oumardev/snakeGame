@@ -3,5 +3,5 @@
     height: 2%;
     background-color: rgb(247, 59, 59);
     position: absolute;
-    border: 1px solid #ffffff;
+    box-shadow: 1px -1px 9px red;
 }
